@@ -1,0 +1,35 @@
+.item {
+    margin-right: 10px;
+}
+
+.item:last-child {
+    margin-right: 0;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 5px;
+}
+
+.avatar img {
+    width: 45px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.item a{
+    color: #ffffff;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.item a:hover {
+    color: rgb(255, 240, 102);
+}

@@ -1,0 +1,52 @@
+.dialogs_wrapper {
+    display: grid;
+    grid-template-areas: 
+    "dialogs chat";
+    grid-template-columns: 3fr 7fr;
+    grid-gap: 10px;
+}
+
+.dialogs {
+    grid-area: dialogs;
+    padding: 20px 10px;
+}
+
+.chat {
+    grid-area: chat;
+    padding-right: 10px;
+    padding-left: 20px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.textarea {
+    resize: none;
+    outline-color: rgb(19, 159, 224);
+}
+
+.textarea::placeholder {
+    font-style: italic;
+}
+
+.button {
+    max-width: 70px;
+    padding: 7px 20px;
+    margin-top: 10px;
+    background-color: rgb(19, 159, 224);
+    color: #ffffff;
+    border: none;
+    font-size: 14px;
+    outline-color: rgb(19, 159, 224);
+}
+
+.button:hover {
+    background-color: rgb(19, 175, 154);
+}

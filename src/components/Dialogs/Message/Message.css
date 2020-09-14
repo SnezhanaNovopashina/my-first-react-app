@@ -1,0 +1,19 @@
+.me {
+    background-color: rgb(238, 237, 237);
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    color: rgb(100, 102, 101);
+    font-family: 'Roboto', sans-serif;
+
+    align-self: flex-end;
+}
+
+.other {
+    background-color: rgb(220, 245, 232);
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    color: rgb(2, 126, 62);
+    font-family: 'Roboto', sans-serif;
+
+    align-self: flex-start;
+}

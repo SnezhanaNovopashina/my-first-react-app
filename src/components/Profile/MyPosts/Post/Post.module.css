@@ -1,0 +1,37 @@
+.message {
+    background-color: rgb(220, 245, 232);
+    margin-top: 10px;
+    padding: 10px 20px;
+    color: rgb(2, 126, 62);
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+}
+
+.userphoto {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+}
+
+.userphoto img {
+    position: absolute;
+    top: 0;
+    left: -85px;
+    width: 190px;
+}
+
+.text {
+    margin: auto 20px;
+}
+
+.likes {
+    position: absolute;
+    right: 25px;
+    bottom: 5px;
+    font-size: 13px;
+    font-weight: 700;
+    color: rgb(73, 211, 135);
+}

@@ -1,0 +1,31 @@
+.nav {
+    grid-area: n;
+    background-color: rgb(73, 167, 211);
+}
+
+.nav__content {
+    padding: 15px;
+}
+
+.nav__content div {
+    margin: 5px;
+}
+
+.nav__content div:last-child {
+    margin-top: 30px;
+}
+
+.nav__content a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.nav__content a:hover {
+    color: rgb(255, 240, 102);
+    font-weight: 400;
+}
+
+.nav__content a.active {
+    color: rgb(255, 240, 102);
+    font-weight: 600;
+}

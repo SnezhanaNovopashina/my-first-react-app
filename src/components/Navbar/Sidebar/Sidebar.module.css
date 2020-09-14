@@ -1,0 +1,21 @@
+.sidebar {
+    padding: 15px 20px;
+}
+
+.sidebar a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.sidebar a h1 {
+    font-weight: normal;
+    margin: 15px 0;
+}
+
+.sidebar a:hover {
+    color: rgb(255, 240, 102);
+}
+
+.friends {
+    display: flex;
+}

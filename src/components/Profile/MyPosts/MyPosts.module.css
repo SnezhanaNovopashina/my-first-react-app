@@ -1,0 +1,46 @@
+.communication {
+    background-color: #ffffff;
+}
+
+.wall {
+    padding: 1px 0;
+}
+
+.newpost {
+    margin: 10px 20px;
+}
+
+.newpost form {
+    display: flex;
+    flex-direction: column;
+}
+
+.newpost label {
+    padding: 20px 0 10px 0;
+    color: rgb(19, 159, 224);
+    font-weight: 500;
+}
+
+.newpost textarea {
+    resize: none;
+    outline-color: rgb(19, 159, 224);
+}
+
+.newpost textarea::placeholder {
+    font-style: italic;
+}
+
+.newpost button {
+    max-width: 150px;
+    padding: 7px 20px;
+    margin-top: 10px;
+    background-color: rgb(19, 159, 224);
+    color: #ffffff;
+    border: none;
+    font-size: 14px;
+    outline-color: rgb(19, 159, 224);
+}
+
+.newpost button:hover {
+    background-color: rgb(19, 175, 154);
+}
