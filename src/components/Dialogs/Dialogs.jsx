@@ -2,7 +2,7 @@ import React from 'react';
 import style from './Dialogs.module.css';
 import DialogsItem from './DialogItem/DialogsItem';
 import Message from './Message/Message';
-import { sendMessageActionCreator, updateNewMessageTextActionCreator } from '../../redux/state';
+import { sendMessageActionCreator, updateNewMessageTextActionCreator } from '../../redux/dialogs-reducer';
 
 
 const Dialogs = (props) => {
@@ -10,14 +10,12 @@ const Dialogs = (props) => {
     let dialogsElements = props.state.dialogs.map( dialog => <DialogsItem name={dialog.name} id={dialog.id} avatar={dialog.avatar} /> );
     let messagesElements = props.state.messages.map( message => <Message text={message.text} author={message.author} /> );
 
-    let newMessageElement = React.createRef();
-
     let sendMessage = () => {
         props.dispatch(sendMessageActionCreator());
     };
 
-    let onMessageChange = () => {
-        let text = newMessageElement.current.value;
+    let onMessageChange = (evt) => {
+        let text = evt.target.value;
         props.dispatch(updateNewMessageTextActionCreator(text));
     };
 
@@ -27,9 +25,12 @@ const Dialogs = (props) => {
                 { dialogsElements }
             </div>
             <div className={style.chat}>
-                { messagesElements }
+                <div className={style.message_area}>
+                    { messagesElements }
+                </div>
                 <form className={style.form}>
-                    <textarea className={style.textarea} ref={newMessageElement} onChange={ onMessageChange } value={props.state.newMessageText} id='message' name='message' cols='80' rows='2' maxLength='1000' placeholder='New message' />
+                    <textarea className={style.textarea} onChange={ onMessageChange } value={props.state.newMessageText} 
+                    id='message' name='message' cols='80' rows='2' maxLength='1000' placeholder='New message' />
                     <button className={style.button} onClick={ sendMessage } type='button'>Send</button>
                 </form>
             </div>
