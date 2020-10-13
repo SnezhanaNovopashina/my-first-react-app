@@ -6,7 +6,7 @@ import { NavLink } from 'react-router-dom';
 
 const Sidebar = (props) => {
 
-    let friendsElements = props.state.friends.map(friend => <FriendsItem id={friend.id} name={friend.name} avatar={friend.avatar} />);
+    let friendsElements = props.sidebar.friends.map(friend => <FriendsItem id={friend.id} name={friend.name} avatar={friend.avatar} />);
 
     return (
         <div className={style.sidebar}>

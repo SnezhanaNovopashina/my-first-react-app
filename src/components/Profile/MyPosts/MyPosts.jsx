@@ -22,7 +22,7 @@ const MyPosts = (props) => {
         <div className={style.communication}>
             <div className={style.newpost}>
                 <form>
-                    <label for='message'>New Post</label>
+                    <label htmlFor='message'>New Post</label>
                     <textarea ref={newPostElement} onChange={ onPostChange } value={props.newPostText} id='message' name='message' cols='100' rows='3' maxLength='1000' placeholder='Text me something' />
                     <button type='button' onClick={ onAddPost }>Post!</button>
                 </form>
