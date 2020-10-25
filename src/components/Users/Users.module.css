@@ -1,0 +1,154 @@
+.wrapper {
+    background-color: rgba(255, 255, 255, 80%);
+    margin: 20px 80px;
+    display: flex;
+}
+
+.pages {
+    display: flex;
+    width: 160px;
+    height: 40px;
+    margin-left: 80px;
+    margin-top: 20px;
+    overflow: auto;
+}
+
+.page {
+    margin: 0 5px;
+    padding: 2px 4px;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.selectedPage {
+    font-weight: 700;
+    background-color: rgb(230, 161, 104);
+}
+
+.leftContainer {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    margin: 5px auto;
+}
+
+.avatar img {
+    width: 65px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.followButton {
+    display: flex;
+    justify-content: center;
+}
+
+.followButton .unfollow{
+    max-width: 100px;
+    padding: 7px 10px;
+    margin: 0 auto 5px auto;
+    background-color: rgb(156, 178, 189);
+    color: #ffffff;
+    border: none;
+    font-size: 14px;
+    outline: none;
+}
+
+.followButton .unfollow:hover {
+    background-color: rgb(219, 142, 78);
+}
+
+.followButton .follow{
+    max-width: 100px;
+    padding: 7px 10px;
+    margin: 0 auto 5px auto;
+    background-color: rgb(19, 159, 224);
+    color: #ffffff;
+    border: none;
+    font-size: 14px;
+    outline: none;
+}
+
+.followButton .follow:hover {
+    background-color: rgb(19, 175, 154);
+}
+
+.rightContainer {
+    width: 80%;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-right: 50px;
+
+    display: grid;
+    grid-template-areas:
+    "name location"
+    "status status";
+    grid-template-columns: 7fr 3fr;
+    grid-template-rows: 6fr 4fr;
+    grid-gap: 10px;
+}
+
+.name {
+    grid-area: name;
+    font-size: 18px;
+    color: #757272;
+}
+
+.name a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.name a:hover {
+    color: rgb(230, 161, 104);
+}
+
+.location {
+    grid-area: location;
+    text-align: right;
+}
+
+.location div {
+    margin-bottom: 5px;
+    color: #5a5757;
+}
+
+.status {
+    grid-area: status;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    color: #5a5757;
+}
+
+.moreUsers {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.moreUsers button {
+    max-width: 400px;
+    padding: 10px 40px;
+    margin: 10px auto 10px auto;
+    background-color: rgb(19, 159, 224);
+    color: #ffffff;
+    border: none;
+    font-size: 18px;
+    font-weight: 400;
+    outline-color: rgb(19, 159, 224);
+}
+
+.moreUsers button:hover {
+    background-color: rgb(19, 175, 154);
+}

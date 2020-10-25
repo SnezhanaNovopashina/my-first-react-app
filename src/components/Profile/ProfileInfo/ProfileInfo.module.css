@@ -8,6 +8,7 @@
     margin-bottom: 30px;
     display: flex;
     font-family: 'Roboto', sans-serif;
+    color: #3b3b3b;
 }
   
 .avatar {
@@ -29,7 +30,6 @@
 }
   
 .firstname {
-    color: #000000;
     font-size: 28px;
 }
 

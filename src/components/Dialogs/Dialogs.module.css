@@ -3,12 +3,11 @@
     grid-template-areas: 
     "dialogs chat";
     grid-template-columns: 3fr 7fr;
-    grid-gap: 10px;
 }
 
 .dialogs {
     grid-area: dialogs;
-    padding: 20px 10px;
+    padding: 10px;
 }
 
 .chat {
